@@ -1,0 +1,51 @@
+<ion-view view-title="我的订单" id="my-order">
+    <ion-nav-bar class="bar-assertive">
+      <ion-nav-buttons side="left">
+        <button class="button button-clear ion-chevron-left" ui-sref="tab.account" style="font-size: 20px"></button>
+      </ion-nav-buttons>
+        <div class="bar bar-header">
+            <h1 class="title"></h1>
+        </div>
+    </ion-nav-bar>
+    <ion-content>
+      <!--导航栏（已收货）-->
+      <div class="tabs-top label-top">
+        <div class="tabs">
+          <a  class="tab-item active" href="#">
+            已收货
+          </a>
+          <a class="tab-item" ui-sref="order-wait-receipt">
+            待收货
+          </a>
+          <a class="tab-item" ui-sref="order-wait-transport">
+            待发货
+          </a>
+        </div>
+      </div>
+      <!--订单图文列表-->
+      <div class="weui_panel_bd">
+        <a href="" class="weui_media_box weui_media_appmsg">
+          <div class="weui_media_hd">
+            <img class="weui_media_appmsg_thumb" src="img/order/wine_order.png" alt="">
+          </div>
+          <div class="weui_media_bd">
+            <h4 class="weui_media_title">五粮特曲</h4>
+            <p class="weui_media_desc">五粮特曲为浓香型白酒，以独特的复合细腻口感而著称，是五粮液股份有限公司公司战略核心品牌。</p>
+            <span>订单数量：20箱</span>
+          </div>
+        </a>
+        <a href="" class="weui_media_box weui_media_appmsg">
+          <div class="weui_media_hd">
+            <img class="weui_media_appmsg_thumb" src="img/order/wine_order.png" alt="">
+          </div>
+          <div class="weui_media_bd">
+            <h4 class="weui_media_title">五粮特曲</h4>
+            <p class="weui_media_desc">五粮特曲为浓香型白酒，以独特的复合细腻口感而著称，是五粮液股份有限公司公司战略核心品牌。</p>
+            <span>订单数量：10箱</span>
+          </div>
+        </a>
+      </div>
+
+
+    </ion-content>
+</ion-view>

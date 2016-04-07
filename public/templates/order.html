@@ -1,0 +1,57 @@
+<ion-view view-title="在线下单" id="order">
+  <ion-nav-bar class="bar-assertive">
+    <ion-nav-buttons side="left">
+      <button class="button button-clear ion-chevron-left" ui-sref="tab.home" style="font-size: 20px"></button>
+    </ion-nav-buttons>
+    <div class="bar bar-header">
+      <h1 class="title">在线下单</h1>
+    </div>
+  </ion-nav-bar>
+  <ion-content>
+    <div class="page">
+      <div class="bd">
+        <!--<a href="javascript:;" class="weui_btn weui_btn_primary">点击展现searchBar</a>-->
+        <div ng-class="['weui_search_bar',focusing]">
+          <form class="weui_search_outer">
+            <div class="weui_search_inner">
+              <i class="weui_icon_search"></i>
+              <input type="search" class="weui_search_input" placeholder="搜索" id="searchInput" ng-model="searchInput"
+                     ng-keyup=" searchKeyupEvent()" ng-focus="searchFocusEvent()" ng-blur="searchBlurEvent()"/>
+              <!--<a href="javascript:" class="weui_icon_clear" id="search_clear"></a>-->
+            </div>
+            <label class="weui_search_text" set-focus ng-if="searchText"
+                   ng-click="searchClickEvent()">
+              <i class="weui_icon_search"></i>
+              <span>搜索</span>
+            </label>
+          </form>
+          <a href="javascript:" class="weui_search_cancel" ng-click="searchCancel()">取消</a>
+        </div>
+        <div class="weui_cells weui_cells_access search_show" ng-if="isSearchShow">
+          <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+              <p>实时搜索文本</p>
+            </div>
+          </div>
+          <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+              <p>实时搜索文本</p>
+            </div>
+          </div>
+          <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+              <p>实时搜索文本</p>
+            </div>
+          </div>
+          <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+              <p>实时搜索文本</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </ion-content>
+</ion-view>

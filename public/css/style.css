@@ -1,0 +1,162 @@
+/* Empty. Add your own CSS if you like */
+
+.pull-right {
+  float: right;
+}
+
+/*个人中心*/
+#account ion-content {
+  background-color: #ecedec;
+}
+
+#account div img {
+  width: 100%;
+}
+
+#account .portrait {
+  width: 28%;
+  top: 13%;
+  left: 36%;
+  position: absolute;
+  text-align: center;
+}
+
+#account .name {
+  font-size: 1.25em;
+  color: white;
+  margin: 0 auto;
+}
+
+#account div a div img {
+  width: 20px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  display:block
+}
+
+#account .wide-line {
+  height: 16px;
+  background-color: #ecedec;
+}
+
+#account .weui_cells{
+  margin-top: 6px;
+}
+
+/*主页*/
+#home ion-content {
+  background-color: #f6efee;
+}
+
+#home .wide-line {
+  height: 2em;
+  color: #fdfdfe;
+}
+
+#home .row div {
+  text-align: center;
+}
+
+#home .row img {
+  width: 60%;
+}
+
+#home .row span {
+  font-size: 1.25em;
+}
+
+#home .weui_toast_content{
+  padding-top: 1em;
+}
+
+#home .weui_toast{
+  border-radius: 27px;
+  top: 50%;
+  min-height: 3.6em;
+}
+
+/*登录*/
+#login ion-content {
+  background-color: #f6f1ee;
+}
+
+#login .logo {
+  text-align: center;
+}
+
+#login div img {
+  margin: 0 auto;
+  width: 30%;
+  padding-top: 5em;
+}
+
+#login input[type="text"] {
+  padding-left: 6px;
+}
+
+#login .pull-right{
+  padding-top: 1em;
+  width: 20%;
+  float: right;
+}
+
+#login .bar-grey{
+  background-color: #f6f1ee;
+}
+
+/*我的订单*/
+#my-order .weui_media_box.weui_media_appmsg{
+  top: 50px;
+}
+
+#my-order .tabs{
+  top: 0;
+}
+
+/*修改密码*/
+#change-password .weui_label{
+  width: 4em;
+}
+
+#change-password .wide-line{
+  height: 3em;
+}
+
+/*公告*/
+#notice .label-top div{
+  font-size: 15px;
+}
+
+#notice .tabs{
+  top: 0;
+}
+
+#notice .tab-item.active{
+  color: #ef473a;
+}
+
+#notice .wide-line{
+  height: 49px;
+}
+
+#my-rebate .item-select select{
+  font-size: 15px;
+}
+
+#my-rebate .portrait{
+  text-align: center;
+}
+
+#my-rebate .portrait img{
+  padding-top: 2em;
+  margin: 0 auto;
+  width: 30%;
+}
+
+#my-rebate .text-center span{
+  font-size: 15px;
+}
+
+#my-rebate .text-center span span{
+  color: red;
+}

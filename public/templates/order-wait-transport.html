@@ -1,0 +1,27 @@
+<ion-view view-title="我的订单" id="my-order">
+    <ion-nav-bar class="bar-assertive">
+      <ion-nav-buttons side="left">
+        <button class="button button-clear ion-chevron-left" ui-sref="tab.account" style="font-size: 20px"></button>
+      </ion-nav-buttons>
+        <div class="bar bar-header">
+            <h1 class="title"></h1>
+        </div>
+    </ion-nav-bar>
+    <ion-content>
+      <!--导航栏（待发货）-->
+      <div class="tabs-top label-top">
+        <div class="tabs">
+          <a  class="tab-item" ui-sref="my-order">
+            已收货
+          </a>
+          <a class="tab-item" ui-sref="order-wait-receipt">
+            待收货
+          </a>
+          <a class="tab-item active" href="#">
+            待发货
+          </a>
+        </div>
+      </div>
+
+    </ion-content>
+</ion-view>
