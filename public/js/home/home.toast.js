@@ -5,13 +5,13 @@
   'use strict';
 
   angular
-    .module('home.ctrl', [])
-    .controller('HomeCtrl', HomeCtrl);
+    .module('home.toast', [])
+    .controller('HomeToastCtrl', HomeToastCtrl);
 
-  HomeCtrl.$inject = ['$scope', '$interval'];
+  HomeToastCtrl.$inject = ['$scope', '$interval'];
 
   /* @ngInject */
-  function HomeCtrl($scope, $interval) {
+  function HomeToastCtrl($scope, $interval) {
     $scope.init = init;
     //默认toast状态不显示（状态为0时不显示，为1显示）
     $scope.toastStatus = 0;

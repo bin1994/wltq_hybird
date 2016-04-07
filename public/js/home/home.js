@@ -4,6 +4,6 @@
 'use strict';
 (function () {
 
-  angular.module('home', ['home.ctrl']);
+  angular.module('home', ['home.toast']);
 
 })();
