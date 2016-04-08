@@ -24,6 +24,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services',  
   })
 
   .config(function ($stateProvider, $urlRouterProvider) {
+      //这里对android进行一些配置,为了保证ios和安卓平台显示效果一致
+      $ionicConfigProvider.tabs.position('bottom');
+      $ionicConfigProvider.tabs.style('standard');
+      $ionicConfigProvider.navBar.alignTitle('center');
+      $ionicConfigProvider.navBar.positionPrimaryButtons('left');
+      $ionicConfigProvider.backButton.icon('ion-ios-arrow-left');
+      $ionicConfigProvider.views.swipeBackEnabled(false);
 
     // Ionic uses AngularUI Router which uses the concept of states
     // Learn more here: https://github.com/angular-ui/ui-router
