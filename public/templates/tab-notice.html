@@ -8,22 +8,29 @@
     <!--导航栏-->
     <div class="tabs-top label-top">
       <div class="tabs">
-        <a class="tab-item" ng-click="selectCat(1)" ng-class="{'active':category==1}" href="#">
+        <a class="tab-item" ng-click="selectCat(1)" ng-class="{'active':category==1}">
           总代理公告
         </a>
-        <a class="tab-item" ng-click="selectCat(2)" ng-class="{'active':category==2}" href="#">
+        <a class="tab-item" ng-click="selectCat(2)" ng-class="{'active':category==2}">
           企业公告
         </a>
       </div>
     </div>
     <div class="wide-line"></div>
-
-    <div class="weui_panel_bd" ng-if="category==1">
-      <div class="weui_media_box weui_media_text">
-        <h4 class="weui_media_title">标题一</h4>
-        <p class="weui_media_desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+    <div class="weui_panel_bd" ng-if="category==1" ng-repeat="item in items">
+      <div class="weui_media_box weui_media_text"  ui-sref="notice-detail({id:item.getObjectId()})">
+        <h4 class="weui_media_title">{{item.get('title')}}</h4>
+        <p class="weui_media_desc">{{item.get('content')}}</p>
       </div>
     </div>
+
+    <div class="weui_panel_bd" ng-if="category==2" ng-repeat="item in data">
+      <div class="weui_media_box weui_media_text"  ui-sref="notice-detail({id:item.getObjectId()})">
+        <h4 class="weui_media_title">{{item.get('title')}}</h4>
+        <p class="weui_media_desc">{{item.get('content')}}</p>
+      </div>
+    </div>
+
 
 
   </ion-content>
