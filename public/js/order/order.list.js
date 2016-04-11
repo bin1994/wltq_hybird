@@ -13,10 +13,17 @@
   /* @ngInject */
   function OrderListCtrl($scope) {
     $scope.init = init;
+    $scope.selectCat=selectCat;
+    $scope.category=1;
+
 
     init();
 
     function init() {
+    }
+
+    function selectCat(cat){
+      $scope.category=cat;
     }
 
   }

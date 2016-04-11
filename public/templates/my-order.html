@@ -11,19 +11,19 @@
       <!--导航栏（已收货）-->
       <div class="tabs-top label-top">
         <div class="tabs">
-          <a  class="tab-item active" href="#">
+          <a  class="tab-item" ng-click="selectCat(1)" ng-class="{'active':category==1}" href="#">
             已收货
           </a>
-          <a class="tab-item" ui-sref="order-wait-receipt">
+          <a class="tab-item" ng-click="selectCat(2)" ng-class="{'active':category==2}">
             待收货
           </a>
-          <a class="tab-item" ui-sref="order-wait-transport">
+          <a class="tab-item" ng-click="selectCat(3)" ng-class="{'active':category==3}">
             待发货
           </a>
         </div>
       </div>
       <!--订单图文列表-->
-      <div class="weui_panel_bd">
+      <div class="weui_panel_bd" ng-if="category==1">
         <a href="" class="weui_media_box weui_media_appmsg">
           <div class="weui_media_hd">
             <img class="weui_media_appmsg_thumb" src="img/order/wine_order.png" alt="">

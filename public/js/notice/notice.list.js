@@ -24,7 +24,6 @@
 
     function selectCat(cat){
       $scope.category=cat;
-      console.log(cat);
     }
 
   }

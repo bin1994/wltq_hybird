@@ -73,11 +73,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                     }
                 }
             })
-            //企业公告（通过企业公告标签跳转）
-            .state('notice-company', {
-                url: '/notice-company',
-                templateUrl: 'templates/notice-company.html'
-            })
 
             //公告详情
             .state('notice-detail', {
@@ -131,19 +126,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                 templateUrl: 'templates/my-order.html',
                 controller: 'OrderListCtrl'
             })
-            //我的订单-待收货（通过标签跳转）
-            .state('order-wait-receipt', {
-                url: '/order-wait-receipt',
-                templateUrl: 'templates/order-wait-receipt.html',
-                controller: 'OrderListCtrl'
-            })
-            //我的订单-待发货（通过标签跳转）
-            .state('order-wait-transport', {
-                url: '/order-wait-transport',
-                templateUrl: 'templates/order-wait-transport.html',
-                controller: 'OrderListCtrl'
-            })
-
 
             //我的消息
             .state('my-msg', {
