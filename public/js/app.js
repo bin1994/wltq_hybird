@@ -76,8 +76,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
             //公告详情
             .state('notice-detail', {
-                url: '/notice-detail',
-                templateUrl: 'templates/notice-detail.html'
+                url: '/notice-detail/:id',
+                templateUrl: 'templates/notice-detail.html',
+                controller: 'NoticeDetailCtrl'
             })
 
             .state('tab.chat-detail', {

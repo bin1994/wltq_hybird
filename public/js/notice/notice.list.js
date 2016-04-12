@@ -33,7 +33,6 @@
     query.find().then(function(items) {
         $scope.items=items;
         $scope.$digest();
-      console.log(items);
     }, function(error) {
       console.log('Error: ' + error.code + ' ' + error.message);
     });
@@ -45,7 +44,6 @@
       query.find().then(function(data) {
         $scope.data=data;
         $scope.$digest();
-        console.log(data);
       }, function(error) {
         console.log('Error: ' + error.code + ' ' + error.message);
       });
